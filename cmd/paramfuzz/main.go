@@ -62,7 +62,6 @@ func main() {
 	fi, _ := os.Stdin.Stat()
 	if (fi.Mode() & os.ModeCharDevice) != 0 {
 		// No stdin provided, show help
-		showHelp()
 		os.Exit(0)
 	}
 
