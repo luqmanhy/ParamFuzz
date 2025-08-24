@@ -61,7 +61,6 @@ func main() {
 	// Check if stdin has data (avoid freeze)
 	fi, _ := os.Stdin.Stat()
 	if (fi.Mode() & os.ModeCharDevice) != 0 {
-		// No stdin provided, show help
 		os.Exit(0)
 	}
 
